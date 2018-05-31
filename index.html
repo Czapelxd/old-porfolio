@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/cleansheet.css">
+
+
+
+
+
+
+
+    <title>Michał Czaplicki</title>
+
+
+</head>
+<body>
+
+<div class="container">
+
+        <!--<nav class="menu" id="menuDrag">-->
+            <!--<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />-->
+            <!--<label class="menu-open-button" for="menu-open">-->
+                <!--<span class="lines line-1"></span>-->
+                <!--<span class="lines line-2"></span>-->
+                <!--<span class="lines line-3"></span>-->
+            <!--</label>-->
+
+            <!--<a href="#about"  class="menu-item blue"> <i class="fas fa-user"></i></a>-->
+            <!--<a href="#education" class="menu-item green"> <i class="fas fa-book"></i></a>-->
+            <!--<a href="#exp" class="menu-item red"> <i class="fas fa-briefcase"></i></a>-->
+            <!--<a href="#skills" class="menu-item purple" onclick="foo()"> <i class="fas fa-cogs"></i> </a>-->
+            <!--<a href="#portfolio" class="menu-item orange" > <i class="fas fa-pencil-alt"></i> </a>-->
+            <!--<a href="#download" class="menu-item lightblue"> <i class="fas fa-download"></i> </a>-->
+
+        <!--</nav>-->
+
+    <section class="grid-container parallax_section parallax_image_first" id="about">
+
+        <div class="left">
+            <p class="left-text">
+                Mam 26 lat. Z wykształcenia jestem fizykiem, a zamiłowania autorem welkich treści multimedialnych. Swój codzinny czas dzielę między pracą, podróżami oraz pracą nad własnymi projektami.
+            </p>
+        </div>
+        <div class="right">
+
+            <figure id="img-pConttainer">
+                <canvas id="img-p" width="750" height="465"></canvas>
+                <script src="assets/js/canva.js"></script>
+            </figure>
+        </div>
+
+
+            <div class="down">
+                <a href="#education">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span class="text">Wykształcenie</span>
+                </a>
+            </div>
+
+    </section>
+
+    <section class="grid-container parallax_section parallax_image_second" id="education">
+
+
+
+        <div class="left">
+
+            <div class="caption" data-title="Politechnika Gdańska" data-description="2013- 2018, Fizyka Techniczna spec. Konwersja Energii">
+                <img src="assets/img/pg_logo_kolor.png" alt="Illustration of Smug Eagle" />
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="caption1" data-title="InfoShare Academy" data-description="2017 - 2018, Front-end Developer">
+                <img src="assets/img/33171951_971157746382285_8929922188811698176_n.png" alt="Illustration of Smug Eagle" />
+            </div>
+
+        </div>
+
+        <div class="down">
+            <a href="#exp">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span class="text">Doświadczenie</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="grid-container parallax_section parallax_image_third" id="exp">
+
+        <div class='parent'>
+            <div class='slider'>
+                <button type="button" id='right' class='rightS' name="button">
+
+                    <svg version="1.1" id="Capa_1" width='40px' height='40px ' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+       <g>
+        <path style='fill: #9d9d9d;' d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+          c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+          "/>
+       </g>
+
+       </svg>
+
+                </button>
+                <button type="button" id='left' class='leftS' name="button">
+                    <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+       <g>
+        <path style='fill: #9d9d9d;' d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+          c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+       </g>
+       </svg>
+                </button>
+                <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20"  />
+                    <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100"  />
+                    <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180"  />
+                    <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260"  />
+                    <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340"  />
+                    <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420"  />
+                    <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500"  />
+                    <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580"  />
+                    <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660"  />
+                </svg>
+                <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20"  />
+                    <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100"  />
+                    <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180"  />
+                    <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260"  />
+                    <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340"  />
+                    <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420"  />
+                    <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500"  />
+                    <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580"  />
+                    <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660"  />
+                </svg>
+                <div id='slide1' class='slide1 up1'>CENTRUM SZKOLEŃ<br>MORSKICH<br><br><p class="subtextSlider">2016 - TERAZ<br>
+                    Asystent / Wsparcie IT</p> </div>
+                <div id='slide2' class='slide2'>WWWW.TEAM.BAXY.PL<br><br><p class="subtextSlider">2016 - TERAZ<br>
+                    Product Owner / Pomysłodowaca / Grafik</p></div>
+                <div id='slide3' class='slide3'>BAR CZARNA WOŁGA<br><br><p class="subtextSlider">2012 - 2016<br>
+                    Zastępca kierownika / Barman</p></div>
+                <div id='slide4' class='slide4'>PLACEHOLDER<br><br><p class="subtextSlider">2018 - <i class="fas fa-infinity"></i><br>
+                    Placeholder</p></div>
+            </div>
+        </div>
+
+        <script src="assets/js/slider.js"></script>
+
+        <div class="down">
+            <a href="#skills">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span class="text">Umiejętności</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="grid-container parallax_section parallax_image_fourth" id="skills">
+
+       <script src="assets/js/canva.js"></script>
+
+
+        <div class="wrapper">
+            <div class="counter col_fourth">
+                <i class="fa fa-code fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
+                <p class="count-text ">SomeText GoesHere</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="fa fa-coffee fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+                <p class="count-text ">SomeText GoesHere</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="fa fa-lightbulb    fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                <p class="count-text ">SomeText GoesHere</p>
+            </div>
+
+            <div class="counter col_fourth end">
+                <i class="fa fa-bug fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="1000" data-speed="1500"></h2>
+                <p class="count-text ">SomeText GoesHere</p>
+            </div>
+        </div>
+
+
+        <div class="down">
+            <a href="#portfolio">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span class="text">Portfolio</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="grid-container parallax_section parallax_image_fifth" id="portfolio">
+        <article class="parallax_main-title"></article>
+        <p class="parallax_text">
+
+        </p>
+    </section>
+
+    <section class="grid-container parallax_section parallax_image_sixth" id="download">
+        <article class="parallax_main-title"></article>
+        <p class="parallax_text">
+
+        </p>
+    </section>
+
+
+
+</div>
+
+
+</body>
+</html>
