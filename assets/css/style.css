@@ -70,19 +70,19 @@ a:link {
 }
 
 .parallax_image_first {
-    background-image: linear-gradient(to bottom, rgba(132, 132, 132, 0.6) 0%, rgba(53, 62, 76, 0.6) 100%), url('../../assets/img/adventure-climb-clouds-691668.jpg');
+    background-image: linear-gradient(to bottom, rgba(132, 132, 132, 0.6) 0%, rgba(53, 62, 76, 0.6) 100%), url('../../assets/img/adventure-climb-clouds-691668.jpg.png');
 }
 
 .parallax_image_second {
-    background-image: url('../../assets/img/abundance-bookcase-books-775998.jpg')
+    background-image: url('../../assets/img/abundance-bookcase-books-775998.jpg.png')
 }
 
 .parallax_image_third {
-    background-image: url('../../assets/img/architectural-design-architecture-buildings-830891.jpg')
+    background-image: url('../../assets/img/architectural-design-architecture-buildings-830891.jpg.png')
 }
 
 .parallax_image_fourth {
-    background-image: url('../../assets/img/art-black-and-white-contemporary-547117.jpg')
+    background-image: url('../../assets/img/art-black-and-white-contemporary-547117.jpg.png')
 }
 
 .parallax_image_fifth {
