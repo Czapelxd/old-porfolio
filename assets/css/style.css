@@ -88,7 +88,7 @@ a:link {
 }
 
 .parallax_image_fifth {
-    background-image: url('../../assets/img/boat-island-ocean-218999.jpg')
+    background-image: url('../../assets/img/abstract-abstract-expressionism-abstract-painting-1124541.jpg')
 }
 
 .parallax_image_sixth {
@@ -266,6 +266,10 @@ a:link {
 
 #pot {
     margin-left: -20px;
+}
+
+#kon {
+    margin-left: -16px;
 }
 
 .caption {
@@ -723,6 +727,107 @@ circle {
   color: #FFFFFF;
 }
 
+.artWork {
+    grid-column: 2/4;
+    grid-row: 2;
+    background-color: black;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr ;
+    height: 100%;
+
+}
+
+.fsm-container {
+    height: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.fsm {
+    background-color: transparent;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.fsm .fa {
+    transition: 1s;
+    color: #f5f5f5;
+    font-size: 2.5vw;
+}
+.fsm .fa:before {
+    color: #f5f5f5;
+}
+.fsm .modal-content {
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+.fsm h1.modal-content {
+    opacity: 0;
+    transition: 1s;
+}
+.fsm.apple {
+    background-image: url("../../assets/img/12046639_1040059842680223_1656221284718452231_n.jpg");
+    grid-column: 1;
+}
+.fsm.pied {
+    background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%);
+    grid-column: 2;
+    /*background-image: url("https://www.team.baxy.pl/");*/
+}
+.fsm.codepen {
+    background: linear-gradient(135deg, #778899 0%, #DCDCDC 100%);
+    grid-column: 3;
+}
+.fsm.google {
+    background: linear-gradient(135deg, #4285f4 0%, #ea4335 100%);
+    grid-column: 4;
+}
+.fsm.growing {
+    height: auto;
+    margin: 0;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+.fsm.full-screen {
+    height: 100vh;
+    z-index: 100;
+    margin: 0;
+    border-radius: 0;
+}
+.fsm.full-screen .fa {
+    font-size: 10vw;
+}
+.fsm.full-screen {
+    height: auto;
+    width: auto;
+    margin: inital;
+}
+.fsm.full-screen {
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+.fsm.shrinking {
+    transition-delay: 0s;
+    transition: 0.5s;
+    opacity: 0;
+    display: block;
+}
+
 
 @keyframes pulse {
     to {
@@ -803,6 +908,7 @@ circle {
     }
 
     .counterWraper {
+        grid-column: 2;
         grid-row: 2/4;
         margin-top: 20px;
         grid-template-columns: 1fr;
@@ -868,4 +974,40 @@ circle {
         height: auto;
     }
 
+    .artWork {
+        grid-column: 2;
+        grid-row: 2/4;
+    }
+
+    .fsm-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+    }
+
+    .fsm.apple {
+        grid-column: 1;
+        grid-row: 1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+    .fsm.pied {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .fsm.codepen {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .fsm.google {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    div#fsm_actual {
+        left: 0 !important;
+        top: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
 }
