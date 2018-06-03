@@ -11,7 +11,6 @@ var svg = true;
 function leftSlide() {
     if (click) {
         if (curpage == 1) curpage = 5;
-        console.log("woek");
         sliding = true;
         curpage--;
         svg = true;
@@ -35,7 +34,6 @@ function leftSlide() {
 function rightSlide() {
     if (click) {
         if (curpage == 4) curpage = 0;
-        console.log("woek");
         sliding = true;
         curpage++;
         svg = false;
@@ -64,14 +62,12 @@ function move() {
                 var c = document.getElementById(transitionPrefix + j);
                 c.classList.remove("steap");
                 c.setAttribute("class", transitionPrefix + j + " streak");
-                console.log("streak");
             }
         } else {
             for (j = 10; j <= 18; j++) {
                 var c = document.getElementById(transitionPrefix + j);
                 c.classList.remove("steap");
                 c.setAttribute("class", transitionPrefix + j + " streak");
-                console.log("streak");
             }
         }
         setTimeout(() => {
@@ -128,7 +124,3 @@ document.onkeydown = e => {
     }
 };
 
-//for codepen header
-// setTimeout(() => {
-// 	rightSlide();
-// }, 500);
