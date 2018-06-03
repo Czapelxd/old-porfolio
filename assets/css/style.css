@@ -451,7 +451,7 @@ circle {
     right: 75.3%;
     margin-top: 168px;
     border: 1px solid #849494;
-    background-color: transparent;
+    background-color: rgb(53, 62, 76);
     transition: .5s;
 }
 .rightS:hover {
@@ -462,7 +462,7 @@ circle {
     margin-left: 0.5%;
     margin-top: 168px;
     border: 1px solid #849494;
-    background-color: transparent;
+    background-color: rgb(53, 62, 76);
     transition: .5s;
 }
 .leftS:hover {
