@@ -1047,4 +1047,17 @@ div.dialog {
         grid-row: 2;
     }
 
+    .potText {
+        font-size: larger;
+    }
+
+    .imgPot {
+        max-width: 50%;
+    }
+
+    .downloadCV {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
 }
