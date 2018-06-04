@@ -802,10 +802,13 @@ div.dialog {
     perspective: 1000px;
 }
 
-.downloadCV {
+.downloadButton {
     grid-column: 2/4;
     align-self: center;
     justify-self: center;
+}
+
+.downloadCV {
     -moz-box-shadow:inset 0px 1px 15px 0px #1c1b18;
     -webkit-box-shadow:inset 0px 1px 15px 0px #1c1b18;
     box-shadow:inset 0px 1px 15px 0px #1c1b18;
@@ -1055,7 +1058,7 @@ div.dialog {
         max-width: 50%;
     }
 
-    .downloadCV {
+    .downloadButton {
         grid-column: 2;
         grid-row: 2;
     }
