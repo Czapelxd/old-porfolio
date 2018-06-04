@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 
 
@@ -23,7 +23,7 @@ a:link {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+    grid-template-rows: 100vh 100vh 100vh 100vh 100vh 100px;
     scroll-behavior: smooth;
 }
 
@@ -92,7 +92,7 @@ a:link {
 }
 
 .parallax_image_sixth {
-    background-image: url('../../assets/img/blur-close-up-figure-346696.jpg')
+    background-image:  linear-gradient(to bottom, rgba(222, 214, 37, 0.6) 0%, rgba(53, 62, 76, 0.6) 100%), url("../../assets/img/brick-wall-bricks-brickwork-756901.jpg");
 }
 .left {
     grid-column: 2;
@@ -259,7 +259,6 @@ a:link {
     color: #fff;
     text-transform: uppercase;
     white-space: nowrap;
-    opacity: .25;
     animation: pulse 2s linear alternate infinite;
     text-align: center;
 }
@@ -269,7 +268,7 @@ a:link {
 }
 
 #kon {
-    margin-left: -16px;
+    margin-left: -45px;
 }
 
 .caption {
@@ -727,113 +726,169 @@ circle {
   color: #FFFFFF;
 }
 
+
+#myIframe{
+    height: 100vh;
+    width: 100%;
+}
+
+iframe.myIframe {
+    width: 100%;
+    height: 100%;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable {
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center;
+}
+
+div.dialog {
+    height: 100% !important;
+}
+
+.ui-dialog .ui-dialog-content {
+    overflow: unset;
+}
+
+.ui-widget-overlay {
+    background: unset;
+}
+
 .artWork {
     grid-column: 2/4;
     grid-row: 2;
-    background-color: black;
     display: grid;
-    align-self: center;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1fr ;
-    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
 
 }
 
-.fsm-container {
-    height: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
+#teamBaxy {
     grid-column: 1;
     grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-}
-
-.fsm {
-    background-color: transparent;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    color: #f5f5f5;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    transition: 1s;
     cursor: pointer;
-    background-repeat:no-repeat;
-    background-position:center;
+    position: relative;
+    background-color: rgb(249, 246, 255, 0.8);
 }
-.fsm .fa {
-    transition: 1s;
-    color: #f5f5f5;
-    font-size: 2.5vw;
-}
-.fsm .fa:before {
-    color: #f5f5f5;
-}
-.fsm .modal-content {
-    height: 0;
-    width: 0;
-    margin: 0;
-}
-.fsm h1.modal-content {
-    opacity: 0;
-    transition: 1s;
-}
-.fsm.apple {
-    background-image: url("../../assets/img/12046639_1040059842680223_1656221284718452231_n.jpg");
-    grid-column: 1;
-}
-.fsm.pied {
-    background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%);
+
+#wishG {
     grid-column: 2;
-    /*background-image: url("https://www.team.baxy.pl/");*/
-}
-.fsm.codepen {
-    background: linear-gradient(135deg, #778899 0%, #DCDCDC 100%);
-    grid-column: 3;
-}
-.fsm.google {
-    background: linear-gradient(135deg, #4285f4 0%, #ea4335 100%);
-    grid-column: 4;
-}
-.fsm.growing {
-    height: auto;
-    margin: 0;
-    opacity: 0;
-    transition-delay: 0.5s;
-}
-.fsm.full-screen {
-    height: 100vh;
-    z-index: 100;
-    margin: 0;
-    border-radius: 0;
-}
-.fsm.full-screen .fa {
-    font-size: 10vw;
-}
-.fsm.full-screen {
-    height: auto;
-    width: auto;
-    margin: inital;
-}
-.fsm.full-screen {
-    transition-delay: 0.5s;
-    opacity: 1;
-}
-.fsm.shrinking {
-    transition-delay: 0s;
-    transition: 0.5s;
-    opacity: 0;
-    display: block;
+    grid-row: 1;
+    cursor: pointer;
+    background-color: rgb(249, 246, 255, 0.8);
 }
 
+.potText {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Permanent Marker', cursive;
+}
 
-@keyframes pulse {
-    to {
-        opacity: 1;
+.imgPot {
+    max-width: 90%;
+}
+
+.potE:hover {
+    -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.downloadCV {
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
+    -moz-box-shadow:inset 0px 1px 15px 0px #1c1b18;
+    -webkit-box-shadow:inset 0px 1px 15px 0px #1c1b18;
+    box-shadow:inset 0px 1px 15px 0px #1c1b18;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+    background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+    background-color:#eae0c2;
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+    border:2px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#505739;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:15px 76px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+.downloadCV:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+    background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+    background-color:#ccc2a6;
+}
+
+.downloadCV:active {
+    position:relative;
+    top:1px;
+}
+
+@-webkit-keyframes shake {
+    10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
     }
 }
+
+@keyframes shake {
+    10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -977,37 +1032,19 @@ circle {
     .artWork {
         grid-column: 2;
         grid-row: 2/4;
-    }
-
-    .fsm-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-row-gap: 40px;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
     }
 
-    .fsm.apple {
+    #teamBaxy {
         grid-column: 1;
         grid-row: 1;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100%;
     }
-    .fsm.pied {
+
+    #wishG {
         grid-column: 1;
         grid-row: 2;
     }
-    .fsm.codepen {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .fsm.google {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    div#fsm_actual {
-        left: 0 !important;
-        top: 0 !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-    }
+
 }

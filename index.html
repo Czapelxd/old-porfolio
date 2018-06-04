@@ -8,7 +8,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
 
-
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -246,25 +248,36 @@
     <section class="grid-container parallax_section parallax_image_fifth" id="portfolio">
 
         <div class="artWork">
-            <div id="fsm_container" class="fsm-container">
-                <dic  class="fsm apple">
-                    <!--<iframe src="https://www.team.baxy.pl/" frameborder="0"></iframe>-->
-                </dic>
-                <div class="fsm pied">
+            <div class="dialog" id="dialog2">
+                <iframe class="myIframe" src="http://www.team.baxy.pl" ></iframe>
+            </div>
+            <div id="teamBaxy" class="potE">
+                <div class="potText">
+                    <img src="assets/img/baxy-logo.png" class="imgPot" style="padding-bottom: 30px">
+                    <p>Autorski projekt wykonany na platformie Squarspace</p>
                 </div>
-                <div class="fsm codepen">
-                </div>
-                <div class="fsm google">
+            </div>
+
+            <div class="dialog" id="dialog3">
+                <iframe class="myIframe" src="http://gorillaz.jfdz6.is-academy.pl/" ></iframe>
+            </div>
+            <div id="wishG" class="potE">
+                <div class="potText">
+                    <img src="assets/img/infoshare-academy.png" class="imgPot">
+                    <p>Projekt zrealizowany w ramach kursu w infoShare Academy</p>
                 </div>
             </div>
         </div>
+
+
+
 
         <div class="down">
             <a href="#download">
                 <div class="chevron"></div>
                 <div class="chevron"></div>
                 <div class="chevron"></div>
-                <span class="text" id="kon">Kontakt</span>
+                <span class="text" id="kon">Curriculum vitae</span>
             </a>
         </div>
 
@@ -272,12 +285,9 @@
 
     </section>
 
-    <!--<section class="grid-container parallax_section parallax_image_sixth" id="download">-->
-        <!--<article class="parallax_main-title"></article>-->
-        <!--<p class="parallax_text">-->
-
-        <!--</p>-->
-    <!--</section>-->
+    <section class="grid-container parallax_section parallax_image_sixth" id="download">
+        <div class="downloadCV">DOWNLOAD</div>
+    </section>
 
 
 
